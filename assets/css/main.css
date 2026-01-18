@@ -1225,13 +1225,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# travel Section
 --------------------------------------------------------------*/
-.services .service-header {
+.travel .service-header {
   margin-bottom: 60px;
 }
 
-.services .service-header .service-intro .service-heading {
+.travel .service-header .service-intro .service-heading {
   font-size: 48px;
   margin-bottom: 0;
   font-weight: 700;
@@ -1239,35 +1239,35 @@ section,
   color: var(--heading-color);
 }
 
-.services .service-header .service-intro .service-heading div {
+.travel .service-header .service-intro .service-heading div {
   display: block;
   position: relative;
 }
 
-.services .service-header .service-intro .service-heading span {
+.travel .service-header .service-intro .service-heading span {
   display: block;
   color: var(--accent-color);
 }
 
 @media (max-width: 992px) {
-  .services .service-header .service-intro .service-heading {
+  .travel .service-header .service-intro .service-heading {
     font-size: 36px;
   }
 }
 
 @media (max-width: 768px) {
-  .services .service-header .service-intro .service-heading {
+  .travel .service-header .service-intro .service-heading {
     font-size: 30px;
     margin-bottom: 20px;
   }
 }
 
-.services .service-header .service-summary p {
+.travel .service-header .service-summary p {
   margin-bottom: 25px;
   color: var(--default-color);
 }
 
-.services .service-header .service-summary .service-btn {
+.travel .service-header .service-summary .service-btn {
   display: inline-flex;
   align-items: center;
   padding: 12px 30px;
@@ -1278,27 +1278,27 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .service-header .service-summary .service-btn i {
+.travel .service-header .service-summary .service-btn i {
   margin-left: 10px;
   transition: transform 0.3s ease;
 }
 
-.services .service-header .service-summary .service-btn:hover {
+.travel .service-header .service-summary .service-btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
   color: var(--contrast-color);
 }
 
-.services .service-header .service-summary .service-btn:hover i {
+.travel .service-header .service-summary .service-btn:hover i {
   transform: translateX(5px);
 }
 
 @media (max-width: 992px) {
-  .services .service-header .service-summary {
+  .travel .service-header .service-summary {
     margin-top: 30px;
   }
 }
 
-.services .service-card {
+.travel .service-card {
   background-color: #174532;
   padding: 40px 40px 40px 40px;
   margin-bottom: 30px;
@@ -1306,7 +1306,7 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .service-card .service-icon {
+.travel .service-card .service-icon {
   margin-bottom: 25px;
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   display: inline-flex;
@@ -1317,38 +1317,38 @@ section,
   height: 64px;
 }
 
-.services .service-card .service-icon i {
+.travel .service-card .service-icon i {
   font-size: 32px;
   color: var(--accent-color);
   transition: all 0.3s ease;
 }
 
-.services .service-card h3 {
+.travel .service-card h3 {
   font-size: 28px;
   margin-bottom: 15px;
   font-weight: 700;
 }
 
-.services .service-card h3 a {
+.travel .service-card h3 a {
   color: var(--heading-color);
   transition: color 0.3s ease;
 }
 
-.services .service-card h3 a span {
+.travel .service-card h3 a span {
   display: block;
 }
 
-.services .service-card h3 a:hover {
+.travel .service-card h3 a:hover {
   color: var(--accent-color);
 }
 
-.services .service-card p {
+.travel .service-card p {
   color: var(--default-color);
   transition: color 0.3s ease;
   margin-bottom: 0;
 }
 
-.services .service-card .card-action {
+.travel .service-card .card-action {
   position: absolute;
   top: 0;
   right: 0;
@@ -1364,17 +1364,17 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .service-card .card-action i {
+.travel .service-card .card-action i {
   font-size: 24px;
   color: var(--contrast-color);
   transition: transform 0.3s ease;
 }
 
-.services .service-card .card-action:hover i {
+.travel .service-card .card-action:hover i {
   transform: rotate(45deg);
 }
 
-.services .service-card::before {
+.travel .service-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1389,48 +1389,48 @@ section,
   transition: all 0.3s ease;
 }
 
-.services .service-card:hover {
+.travel .service-card:hover {
   border-color: transparent;
 }
 
-.services .service-card:hover::before {
+.travel .service-card:hover::before {
   opacity: 1;
   visibility: visible;
   background-color: var(--surface-color);
 }
 
-.services .service-card:hover h3 a {
+.travel .service-card:hover h3 a {
   color: var(--accent-color);
 }
 
-.services .service-card:hover h3 a:hover {
+.travel .service-card:hover h3 a:hover {
   color: var(--accent-color);
 }
 
-.services .service-card:hover p {
+.travel .service-card:hover p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.services .service-card:hover .card-action {
+.travel .service-card:hover .card-action {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.services .service-card:hover .service-icon i {
+.travel .service-card:hover .service-icon i {
   transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-  .services .service-card {
+  .travel .service-card {
     padding: 150px 25px 25px;
   }
 
-  .services .service-card h3 {
+  .travel .service-card h3 {
     font-size: 24px;
   }
 
-  .services .service-card .service-icon {
+  .travel .service-card .service-icon {
     position: absolute;
     top: 40px;
     left: 25px;
@@ -1438,7 +1438,7 @@ section,
 }
 
 @media (max-width: 768px) {
-  .services {
+  .travel {
     padding: 70px 0 50px;
   }
 }
@@ -2171,10 +2171,10 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Team Section
+# party Section
 --------------------------------------------------------------*/
 
-.team .team-member {
+.party .party-member {
   position: relative;
   background-color: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -2182,16 +2182,16 @@ section,
   transition: 0.3s;
 }
 
-.team .team-member:hover {
+.party .party-member:hover {
   border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
-.team .team-member .member-img {
+.party .party-member .member-img {
   flex: 0 0 200px;
   overflow: hidden;
 }
 
-.team .team-member .member-img img {
+.party .party-member .member-img img {
   width: 200px;
   height: 100%;
   object-fit: cover;
@@ -2199,19 +2199,19 @@ section,
   border-bottom-left-radius: 8px;
 }
 
-.team .team-member .member-info {
+.party .party-member .member-info {
   padding: 25px;
   text-align: left;
 }
 
-.team .team-member .member-info h4 {
+.party .party-member .member-info h4 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 5px;
   color: var(--heading-color);
 }
 
-.team .team-member .member-info span {
+.party .party-member .member-info span {
   font-size: 0.9rem;
   font-weight: 400;
   color: color-mix(in srgb, var(--heading-color), transparent 30%);
@@ -2219,18 +2219,18 @@ section,
   margin-bottom: 15px;
 }
 
-.team .team-member .member-info p {
+.party .party-member .member-info p {
   font-size: 0.9rem;
   margin-bottom: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.team .team-member .member-info .social {
+.party .party-member .member-info .social {
   display: flex;
   gap: 10px;
 }
 
-.team .team-member .member-info .social a {
+.party .party-member .member-info .social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2243,31 +2243,31 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.team .team-member .member-info .social a:hover {
+.party .party-member .member-info .social a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 95%);
 }
 
 @media (max-width: 767px) {
-  .team .team-member {
+  .party .party-member {
     flex-direction: column;
   }
 
-  .team .team-member .member-img {
+  .party .party-member .member-img {
     flex: auto;
   }
 
-  .team .team-member .member-img img {
+  .party .party-member .member-img img {
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
 
-  .team .team-member .member-info {
+  .party .party-member .member-info {
     text-align: center;
   }
 
-  .team .team-member .member-info .social {
+  .party .party-member .member-info .social {
     justify-content: center;
   }
 }
