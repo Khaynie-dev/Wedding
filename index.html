@@ -161,6 +161,8 @@
     .party-card:hover { transform: translateY(-4px); }
     .party-photo { aspect-ratio: 4/5; overflow: hidden; }
     .party-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+    .party-photo-placeholder { display: flex; align-items: center; justify-content: center; background: linear-gradient(160deg, rgba(201,169,110,0.18), rgba(15,45,33,0.5)); }
+    .party-photo-placeholder span { font-family: var(--heading-font); font-size: 4.5rem; color: var(--gold); letter-spacing: 2px; }
     .party-card:hover .party-photo img { transform: scale(1.05); }
     .party-body { padding: 22px 26px 28px; }
     .party-body .role { font-family: var(--nav-font); color: var(--gold); letter-spacing: 3px; font-size: 0.7rem; text-transform: uppercase; }
@@ -519,16 +521,6 @@
         <div class="row g-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="party-card">
-              <div class="party-photo"><img src="assets/img/person/person-m-1.webp" alt="" loading="lazy" width="800" height="1000"></div>
-              <div class="party-body">
-                <div class="role">Best Man</div>
-                <h4>Jason Gervias</h4>
-                <p>Jason and I met years ago and quickly became friends&mdash;the kind of friends who feed off each other's energy, which has led to both great ideas and some very questionable ones. Even though life gets busy and we don't talk as often as we used to, we know we're always just a phone call away when the other needs help, and every time we do talk it's like no time has passed. I'm really grateful to have him here today&mdash;so everyone please give it up for my best man, Jason!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-            <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-f-1.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
                 <div class="role">Maid of Honor</div>
@@ -537,17 +529,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="party-card">
-              <div class="party-photo"><img src="assets/img/person/person-m-2.webp" alt="" loading="lazy" width="800" height="1000"></div>
-              <div class="party-body">
-                <div class="role">Groomsman</div>
-                <h4>Eric McClelland</h4>
-                <p>I met Eric through Meghan&mdash;they're cousins&mdash;on a trip to Atlanta, and since then we've spent a lot of time gaming online and catching up about everyday life. He's a great guy and an awesome friend, even if we do give him a hard time from time to time. But in all seriousness, Eric&hellip; you still need to work on those Call of Duty skills.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-f-2.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
@@ -557,7 +539,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-m-3.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
@@ -567,7 +549,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-f-3.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
@@ -577,7 +559,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-m-4.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
@@ -587,7 +569,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-f-4.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
@@ -597,13 +579,24 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-f-5.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
                 <div class="role">Bridesmaid</div>
                 <h4>Amber Eisenacher</h4>
                 <p>Amber is Meg's older cousin. No one understands the family dynamic like her. Meg can't wait to make her learn line dances and hang out with her crazy group of friends. She's grateful to have big cousins that are always there for her, and Amber's unwavering support and big-sister energy mean the world (especially since she's always with Meg's big sister). Meg feels so lucky to share this special day with her.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="party-card">
+              <!-- TODO: replace with Zane's photo - drop the file at assets/img/person/person-m-5.webp and swap this div for the same <img> markup the other cards use -->
+              <div class="party-photo party-photo-placeholder"><span>ZQ</span></div>
+              <div class="party-body">
+                <div class="role">Groomsman</div>
+                <h4>Zane Quattrucci</h4>
+                <p>Zane and I met at work within the animal industry years ago, and we've been able to discuss anything upcoming in our lives ever since. Whether it's a straightforward conversation or just needing to laugh, we're able to count on each other.</p>
               </div>
             </div>
           </div>
