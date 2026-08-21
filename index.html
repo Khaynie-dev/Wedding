@@ -157,6 +157,22 @@
     .schedule-event p { margin: 0; color: rgba(255,255,255,0.7); }
 
     /* WEDDING PARTY photo grid */
+    .party-group-title {
+      font-family: var(--heading-font);
+      color: var(--heading-color);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      text-align: center;
+      margin: 0 0 28px;
+    }
+    .row + .party-group-title { margin-top: 64px; }
+    .party-group-title::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 1px;
+      background: var(--gold);
+      margin: 14px auto 0;
+    }
     .party-card { background: var(--surface-color); border-radius: 12px; overflow: hidden; height: 100%; transition: transform 0.3s; }
     .party-card:hover { transform: translateY(-4px); }
     .party-photo { aspect-ratio: 4/5; overflow: hidden; }
@@ -518,6 +534,7 @@
       </div>
 
       <div class="container">
+        <h3 class="party-group-title" data-aos="fade-up">Bride&rsquo;s Side</h3>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="party-card">
@@ -541,21 +558,44 @@
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="party-card">
-              <div class="party-photo"><img src="assets/img/person/person-m-3.webp" alt="" loading="lazy" width="800" height="1000"></div>
-              <div class="party-body">
-                <div class="role">Groomsman</div>
-                <h4>Juan Chavez</h4>
-                <p>I met Juan at work, and we quickly became friends. He's the kind of guy who shows up anytime someone needs help without even thinking twice&mdash;even when it's something none of us really want to do. He's always pushing us to be our best and is the first person there to listen when we need to vent.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="party-card">
               <div class="party-photo"><img src="assets/img/person/person-f-3.webp" alt="" loading="lazy" width="800" height="1000"></div>
               <div class="party-body">
                 <div class="role">Bridesmaid</div>
                 <h4>Nikki Bower</h4>
                 <p>Nikki is Meg's sister. She is 8 years older than Meg, so they didn't have much in common growing up&mdash;they were also complete opposites. As they grew into adults, they began to share more with each other and discover more similarities, especially their love for country music. As they planned Nikki's wedding 10 years ago, they grew a new bond, and now they get to do that all over again. Meg is so grateful to have a caring and supportive sister to stand by her side on her special day.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="party-card">
+              <div class="party-photo"><img src="assets/img/person/person-f-4.webp" alt="" loading="lazy" width="800" height="1000"></div>
+              <div class="party-body">
+                <div class="role">Bridesmaid</div>
+                <h4>Tatyuana Williams</h4>
+                <p>Meg and Taty also met at work, and Taty immediately felt comfortable opening up to her. They've been friends ever since, and she fits right in with Meg's crazy group of friends!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="party-card">
+              <div class="party-photo"><img src="assets/img/person/person-f-5.webp" alt="" loading="lazy" width="800" height="1000"></div>
+              <div class="party-body">
+                <div class="role">Bridesmaid</div>
+                <h4>Amber Eisenacher</h4>
+                <p>Amber is Meg's older cousin. No one understands the family dynamic like her. Meg can't wait to make her learn line dances and hang out with her crazy group of friends. She's grateful to have big cousins that are always there for her, and Amber's unwavering support and big-sister energy mean the world (especially since she's always with Meg's big sister). Meg feels so lucky to share this special day with her.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="party-group-title" data-aos="fade-up">Groom&rsquo;s Side</h3>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="party-card">
+              <div class="party-photo"><img src="assets/img/person/person-m-3.webp" alt="" loading="lazy" width="800" height="1000"></div>
+              <div class="party-body">
+                <div class="role">Best Man</div>
+                <h4>Juan Chavez</h4>
+                <p>I met Juan at work, and we quickly became friends. He's the kind of guy who shows up anytime someone needs help without even thinking twice&mdash;even when it's something none of us really want to do. He's always pushing us to be our best and is the first person there to listen when we need to vent.</p>
               </div>
             </div>
           </div>
@@ -570,26 +610,6 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="party-card">
-              <div class="party-photo"><img src="assets/img/person/person-f-4.webp" alt="" loading="lazy" width="800" height="1000"></div>
-              <div class="party-body">
-                <div class="role">Bridesmaid</div>
-                <h4>Tatyuana Williams</h4>
-                <p>Meg and Taty also met at work, and Taty immediately felt comfortable opening up to her. They've been friends ever since, and she fits right in with Meg's crazy group of friends!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="party-card">
-              <div class="party-photo"><img src="assets/img/person/person-f-5.webp" alt="" loading="lazy" width="800" height="1000"></div>
-              <div class="party-body">
-                <div class="role">Bridesmaid</div>
-                <h4>Amber Eisenacher</h4>
-                <p>Amber is Meg's older cousin. No one understands the family dynamic like her. Meg can't wait to make her learn line dances and hang out with her crazy group of friends. She's grateful to have big cousins that are always there for her, and Amber's unwavering support and big-sister energy mean the world (especially since she's always with Meg's big sister). Meg feels so lucky to share this special day with her.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="party-card">
               <!-- TODO: replace with Zane's photo - drop the file at assets/img/person/person-m-5.webp and swap this div for the same <img> markup the other cards use -->
               <div class="party-photo party-photo-placeholder"><span>ZQ</span></div>
