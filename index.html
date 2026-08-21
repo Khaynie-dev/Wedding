@@ -255,6 +255,51 @@
     .lodging-note { text-align: center; font-size: 0.95rem; color: rgba(255,255,255,0.65); font-style: italic; margin: 12px 0 0; }
     .lodging-tip { background: rgba(201,169,110,0.1); border: 1px solid rgba(201,169,110,0.3); border-radius: 10px; padding: 24px 28px; margin-top: 40px; text-align: center; }
     .lodging-tip p { color: rgba(255,255,255,0.85); margin: 0; line-height: 1.7; font-size: 1rem; }
+
+    /* MOBILE REFINEMENTS */
+    @media (max-width: 991.98px) {
+      /* fixed backgrounds render badly (zoomed / jumpy) on touch browsers */
+      .hero-preview, .parallax-divider { background-attachment: scroll; }
+
+      /* AOS parks fade-left/right 100px to the side before they animate in,
+         which hangs off the right edge on a narrow screen — slide up instead */
+      html:not(.no-js) [data-aos="fade-left"][data-aos],
+      html:not(.no-js) [data-aos="fade-right"][data-aos] {
+        transform: translate3d(0, 40px, 0);
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      /* countdown: four cells share the row instead of wrapping to two lines */
+      .countdown-row { gap: 8px; margin-top: 36px; flex-wrap: nowrap; }
+      .countdown-cell { flex: 1 1 0; min-width: 0; padding: 14px 4px; }
+      .countdown-cell .num { font-size: 1.7rem; }
+      .countdown-cell .lbl { font-size: 0.55rem; letter-spacing: 1px; margin-top: 6px; }
+
+      /* the gx-5 gutter is wider than the container padding, which pushed the
+         portrait past the right edge of the screen */
+      #about .row { --bs-gutter-x: 1.5rem; }
+      /* the offset gold frame reads as a misalignment at this width */
+      .about-portrait-wrap { padding: 0; margin-bottom: 28px; }
+      .about-portrait-wrap::before { display: none; }
+
+      /* these sections sit outside a .container, so they need their own gutter */
+      .schedule-wrap, .faq-wrap { padding-left: 16px; padding-right: 16px; }
+
+      .hero-preview { padding: 110px 16px 60px; }
+      .hero-preview .date-line { font-size: 0.75rem; letter-spacing: 3px; }
+
+      /* schedule: stack the time above the event so neither gets squeezed */
+      .schedule-row { flex-direction: column; padding: 18px 0; }
+      .schedule-time { min-width: 0; font-size: 1.7rem; margin-bottom: 4px; }
+
+      .section-title-preview { padding: 24px 16px 30px; }
+      .section-title-preview h2 { font-size: clamp(2rem, 8.5vw, 2.6rem); }
+      .party-group-title { font-size: 1.9rem; }
+      .party-body { padding: 18px 20px 22px; }
+      .info-card { padding: 28px 20px; }
+      .rsvp-cta-section { padding: 70px 16px; }
+    }
   </style>
 </head>
 
